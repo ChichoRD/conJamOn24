@@ -14,5 +14,12 @@ namespace ReignSystem
 
             return new ParametrizableReign<IReadOnlyDictionary<TParameter, float>>(newParameters);
         }
+
+        //public static ParametrizableReign<IReadOnlyDictionary<TParameter, float>> WithParameters<TReign, TParameter, T>(this TReign reign, T parameters)
+        //    where TReign : IParametrizableReign<T>
+        //    where T : IReadOnlyDictionary<TParameter, float>
+        //{
+
+        //}
     }
 }

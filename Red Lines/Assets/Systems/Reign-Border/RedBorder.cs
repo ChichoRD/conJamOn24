@@ -13,7 +13,7 @@ namespace ReignBorderSystem
     //    public Reign Modify(ReignWith<Comunication> value)
     //    {
     //        ((IParametrizableReign<OuterReignParameters<IParametrizableReign<InnerReignParameters>>>)value.reign)
-    //            .Parameter.values[]
+    //            .
     //    }
     //}
 }
