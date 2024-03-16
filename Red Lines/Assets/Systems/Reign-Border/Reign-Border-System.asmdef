@@ -2,8 +2,8 @@
     "name": "Reign-Border-System",
     "rootNamespace": "",
     "references": [
-        "GUID:b9eeb338b0ff9174f912761967ea491b",
-        "GUID:b2ad6a965cd9aaf4b9c6241d5f6f28c6",
+        "GUID:df68c24e4ff14d44cb9d92f65ec0e936",
+        "GUID:1aa95581a47e2784092aca4a199ec1a7",
         "GUID:75469ad4d38634e559750d17036d5f7c"
     ],
     "includePlatforms": [],
