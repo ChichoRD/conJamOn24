@@ -1,0 +1,16 @@
+{
+    "name": "Reign-Collection-System",
+    "rootNamespace": "",
+    "references": [
+        "GUID:b9eeb338b0ff9174f912761967ea491b"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
