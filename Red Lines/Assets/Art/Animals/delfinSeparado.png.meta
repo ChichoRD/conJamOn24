@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 54
+  spritePixelsToUnits: 64
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -108,7 +108,112 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: delfinSeparado_0
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 13
+        width: 31
+        height: 46
+      alignment: 9
+      pivot: {x: 0.40174374, y: 0.4210493}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c37d9881d6abbb745a2c08cb6e0e3108
+      internalID: -1496739634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LeftArm
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 33
+        width: 14
+        height: 9
+      alignment: 9
+      pivot: {x: 0.83471954, y: 0.5520672}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b67fde7128e3194bb64f0ca18cc3b04
+      internalID: -743314961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RigthArm
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 29
+        width: 16
+        height: 13
+      alignment: 9
+      pivot: {x: 0.12657881, y: 0.5811049}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f03fe942f11e4840a9a93daff853095
+      internalID: -1181400130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LeftFeet
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 17
+        width: 16
+        height: 8
+      alignment: 9
+      pivot: {x: 0.85877705, y: 0.3974917}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e8e77c76825b5d43b9402cadfa94d88
+      internalID: -1916655781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RigthFeet
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 4
+        width: 9
+        height: 15
+      alignment: 9
+      pivot: {x: 0.27871364, y: 0.8514549}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d1168ec7c7e63c42a3f2bb463424fcf
+      internalID: 1243581104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -119,7 +224,12 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      LeftArm: -743314961
+      LeftFeet: -1916655781
+      RigthArm: -1181400130
+      RigthFeet: 1243581104
+      delfinSeparado_0: -1496739634
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
