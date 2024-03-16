@@ -73,12 +73,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 3
-  m_Sprite: {fileID: -317037097, guid: 21d54df02d00f3b49b7e69560f0dbd84, type: 3}
+  m_Sprite: {fileID: 247786360, guid: a721685061b34524a99065a10d4eb19a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.1875, y: 0.25}
+  m_Size: {x: 0.09375, y: 0.25}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -161,12 +161,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: -1115122803, guid: 21d54df02d00f3b49b7e69560f0dbd84, type: 3}
+  m_Sprite: {fileID: -423612809, guid: a721685061b34524a99065a10d4eb19a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.26, y: 0.53}
+  m_Size: {x: 0.40625, y: 0.828125}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -299,7 +299,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 1740017505, guid: 21d54df02d00f3b49b7e69560f0dbd84, type: 3}
+  m_Sprite: {fileID: -2090028182, guid: a721685061b34524a99065a10d4eb19a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -383,7 +383,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 3
-  m_Sprite: {fileID: 96257084, guid: 21d54df02d00f3b49b7e69560f0dbd84, type: 3}
+  m_Sprite: {fileID: 1367220759, guid: a721685061b34524a99065a10d4eb19a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -467,12 +467,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: -1748319236, guid: 21d54df02d00f3b49b7e69560f0dbd84, type: 3}
+  m_Sprite: {fileID: -1602193291, guid: a721685061b34524a99065a10d4eb19a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.4, y: 0.34}
+  m_Size: {x: 0.625, y: 0.53125}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
