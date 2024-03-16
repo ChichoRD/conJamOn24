@@ -374,41 +374,23 @@ MonoBehaviour:
   _reignsContainer: {fileID: 11400000, guid: 5b544b5b399555843806fdf112de3852, type: 2}
   _reignFactories:
   - <ReignLayoutType>k__BackingField: 0
-    <ReignFactory>k__BackingField:
-      <Factory>k__BackingField: {fileID: 11400000, guid: 4061ce180d2d9804ab955e8f2ac95eff, type: 2}
-      <Count>k__BackingField: 1
+    <ReignFactory>k__BackingField: {<Factory>k__BackingField: {fileID: 11400000, guid: 4061ce180d2d9804ab955e8f2ac95eff, type: 2}, <Count>k__BackingField: 1}
   - <ReignLayoutType>k__BackingField: 1
-    <ReignFactory>k__BackingField:
-      <Factory>k__BackingField: {fileID: 11400000, guid: 4061ce180d2d9804ab955e8f2ac95eff, type: 2}
-      <Count>k__BackingField: 1
+    <ReignFactory>k__BackingField: {<Factory>k__BackingField: {fileID: 11400000, guid: 4061ce180d2d9804ab955e8f2ac95eff, type: 2}, <Count>k__BackingField: 1}
   - <ReignLayoutType>k__BackingField: 2
-    <ReignFactory>k__BackingField:
-      <Factory>k__BackingField: {fileID: 11400000, guid: 4061ce180d2d9804ab955e8f2ac95eff, type: 2}
-      <Count>k__BackingField: 1
+    <ReignFactory>k__BackingField: {<Factory>k__BackingField: {fileID: 11400000, guid: 4061ce180d2d9804ab955e8f2ac95eff, type: 2}, <Count>k__BackingField: 1}
   - <ReignLayoutType>k__BackingField: 3
-    <ReignFactory>k__BackingField:
-      <Factory>k__BackingField: {fileID: 11400000, guid: 4061ce180d2d9804ab955e8f2ac95eff, type: 2}
-      <Count>k__BackingField: 1
+    <ReignFactory>k__BackingField: {<Factory>k__BackingField: {fileID: 11400000, guid: 4061ce180d2d9804ab955e8f2ac95eff, type: 2}, <Count>k__BackingField: 1}
   - <ReignLayoutType>k__BackingField: 4
-    <ReignFactory>k__BackingField:
-      <Factory>k__BackingField: {fileID: 11400000, guid: 4061ce180d2d9804ab955e8f2ac95eff, type: 2}
-      <Count>k__BackingField: 1
+    <ReignFactory>k__BackingField: {<Factory>k__BackingField: {fileID: 11400000, guid: 4061ce180d2d9804ab955e8f2ac95eff, type: 2}, <Count>k__BackingField: 1}
   - <ReignLayoutType>k__BackingField: 5
-    <ReignFactory>k__BackingField:
-      <Factory>k__BackingField: {fileID: 11400000, guid: 4061ce180d2d9804ab955e8f2ac95eff, type: 2}
-      <Count>k__BackingField: 1
+    <ReignFactory>k__BackingField: {<Factory>k__BackingField: {fileID: 11400000, guid: 4061ce180d2d9804ab955e8f2ac95eff, type: 2}, <Count>k__BackingField: 1}
   - <ReignLayoutType>k__BackingField: 6
-    <ReignFactory>k__BackingField:
-      <Factory>k__BackingField: {fileID: 11400000, guid: 4061ce180d2d9804ab955e8f2ac95eff, type: 2}
-      <Count>k__BackingField: 1
+    <ReignFactory>k__BackingField: {<Factory>k__BackingField: {fileID: 11400000, guid: 4061ce180d2d9804ab955e8f2ac95eff, type: 2}, <Count>k__BackingField: 1}
   - <ReignLayoutType>k__BackingField: 7
-    <ReignFactory>k__BackingField:
-      <Factory>k__BackingField: {fileID: 11400000, guid: 4061ce180d2d9804ab955e8f2ac95eff, type: 2}
-      <Count>k__BackingField: 1
+    <ReignFactory>k__BackingField: {<Factory>k__BackingField: {fileID: 11400000, guid: 4061ce180d2d9804ab955e8f2ac95eff, type: 2}, <Count>k__BackingField: 1}
   - <ReignLayoutType>k__BackingField: 8
-    <ReignFactory>k__BackingField:
-      <Factory>k__BackingField: {fileID: 11400000, guid: 4061ce180d2d9804ab955e8f2ac95eff, type: 2}
-      <Count>k__BackingField: 1
+    <ReignFactory>k__BackingField: {<Factory>k__BackingField: {fileID: 11400000, guid: 4061ce180d2d9804ab955e8f2ac95eff, type: 2}, <Count>k__BackingField: 1}
   _createOnAwake: 1
 --- !u!4 &947322166
 Transform:
