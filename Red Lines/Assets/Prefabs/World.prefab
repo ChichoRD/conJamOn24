@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3497922435040262051}
   - component: {fileID: 6632133907046977464}
   - component: {fileID: 8135713761840566741}
+  - component: {fileID: 7687672100520149614}
   m_Layer: 5
   m_Name: Kingdom 6
   m_TagString: Untagged
@@ -179,6 +180,19 @@ PolygonCollider2D:
       - {x: -0.6142278, y: -0.46230888}
       - {x: -0.45767295, y: -0.23794413}
   m_UseDelaunayMesh: 0
+--- !u!114 &7687672100520149614
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 911831489987984806}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd8e2d0b57dad0241b6808e3215a595b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ventanaEmergente: {fileID: 0}
 --- !u!1 &1875615451433186729
 GameObject:
   m_ObjectHideFlags: 0
@@ -230,6 +244,7 @@ GameObject:
   - component: {fileID: 3090775273919682724}
   - component: {fileID: 6251236341403116959}
   - component: {fileID: 8776694027800833890}
+  - component: {fileID: 4747864460855135218}
   m_Layer: 5
   m_Name: Kingdom 8
   m_TagString: Untagged
@@ -394,6 +409,19 @@ PolygonCollider2D:
       - {x: 1.7143335, y: -0.97520304}
       - {x: 1.6888576, y: -0.7279222}
   m_UseDelaunayMesh: 0
+--- !u!114 &4747864460855135218
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2879483169364441320}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd8e2d0b57dad0241b6808e3215a595b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ventanaEmergente: {fileID: 0}
 --- !u!1 &4324050605495803331
 GameObject:
   m_ObjectHideFlags: 0
@@ -405,6 +433,7 @@ GameObject:
   - component: {fileID: 5273963287715008282}
   - component: {fileID: 6243197073366974673}
   - component: {fileID: 7682695403162084732}
+  - component: {fileID: 4552369950260584886}
   m_Layer: 5
   m_Name: Kingdom 3
   m_TagString: Untagged
@@ -548,6 +577,19 @@ PolygonCollider2D:
       - {x: 0.14017987, y: 0.0017614365}
       - {x: 0.27159572, y: 0.11837721}
   m_UseDelaunayMesh: 0
+--- !u!114 &4552369950260584886
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4324050605495803331}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd8e2d0b57dad0241b6808e3215a595b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ventanaEmergente: {fileID: 0}
 --- !u!1 &5081994792617150082
 GameObject:
   m_ObjectHideFlags: 0
@@ -559,6 +601,7 @@ GameObject:
   - component: {fileID: 8687445663272301130}
   - component: {fileID: 6859443648372503381}
   - component: {fileID: 2780014605849751871}
+  - component: {fileID: 1532292686641244350}
   m_Layer: 5
   m_Name: Kingdom 5
   m_TagString: Untagged
@@ -715,6 +758,19 @@ PolygonCollider2D:
       - {x: 1.2077091, y: -0.20687246}
       - {x: 1.1494188, y: 0.060828686}
   m_UseDelaunayMesh: 0
+--- !u!114 &1532292686641244350
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5081994792617150082}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd8e2d0b57dad0241b6808e3215a595b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ventanaEmergente: {fileID: 0}
 --- !u!1 &6573488552289220592
 GameObject:
   m_ObjectHideFlags: 0
@@ -726,6 +782,7 @@ GameObject:
   - component: {fileID: 3177600008268356970}
   - component: {fileID: 2736574090251699418}
   - component: {fileID: 3626162652658473685}
+  - component: {fileID: 7011584356422563269}
   m_Layer: 5
   m_Name: Kingdom 5 (2)
   m_TagString: Untagged
@@ -861,6 +918,19 @@ PolygonCollider2D:
       - {x: 0.4824171, y: -0.18539953}
       - {x: 0.48590517, y: -0.0072612762}
   m_UseDelaunayMesh: 0
+--- !u!114 &7011584356422563269
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6573488552289220592}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd8e2d0b57dad0241b6808e3215a595b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ventanaEmergente: {fileID: 0}
 --- !u!1 &6821035773637342704
 GameObject:
   m_ObjectHideFlags: 0
@@ -872,6 +942,7 @@ GameObject:
   - component: {fileID: 4550022564895234493}
   - component: {fileID: 9069952093285344991}
   - component: {fileID: 4327327540505258176}
+  - component: {fileID: 3684583279626452859}
   m_Layer: 5
   m_Name: Kingdom 7
   m_TagString: Untagged
@@ -1052,6 +1123,19 @@ PolygonCollider2D:
       - {x: 0.18965769, y: -1.2533517}
       - {x: 0.35348988, y: -1.3556051}
   m_UseDelaunayMesh: 0
+--- !u!114 &3684583279626452859
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6821035773637342704}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd8e2d0b57dad0241b6808e3215a595b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ventanaEmergente: {fileID: 0}
 --- !u!1 &7626032544701076810
 GameObject:
   m_ObjectHideFlags: 0
@@ -1063,6 +1147,7 @@ GameObject:
   - component: {fileID: 4955373049677819555}
   - component: {fileID: 606591615376307199}
   - component: {fileID: 1501884619283818861}
+  - component: {fileID: 4200474716678355696}
   m_Layer: 5
   m_Name: Kingdom 9
   m_TagString: Untagged
@@ -1237,6 +1322,19 @@ PolygonCollider2D:
       - {x: 1.3125, y: -1.515625}
       - {x: 1.453125, y: -1.359375}
   m_UseDelaunayMesh: 0
+--- !u!114 &4200474716678355696
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7626032544701076810}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd8e2d0b57dad0241b6808e3215a595b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ventanaEmergente: {fileID: 0}
 --- !u!1 &8273245398316293916
 GameObject:
   m_ObjectHideFlags: 0
@@ -1248,6 +1346,7 @@ GameObject:
   - component: {fileID: 306948799901267083}
   - component: {fileID: 9054093032708922530}
   - component: {fileID: 853479003051344306}
+  - component: {fileID: 5262973547311851891}
   m_Layer: 5
   m_Name: Kingdom 4
   m_TagString: Untagged
@@ -1428,6 +1527,19 @@ PolygonCollider2D:
       - {x: 0.7357633, y: -1.0085068}
       - {x: 1.105109, y: -0.98364305}
   m_UseDelaunayMesh: 0
+--- !u!114 &5262973547311851891
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8273245398316293916}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd8e2d0b57dad0241b6808e3215a595b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ventanaEmergente: {fileID: 0}
 --- !u!1 &8558100240054136138
 GameObject:
   m_ObjectHideFlags: 0
@@ -1439,6 +1551,7 @@ GameObject:
   - component: {fileID: 772397671935479696}
   - component: {fileID: 1579142797160420926}
   - component: {fileID: 2300632465914214121}
+  - component: {fileID: 5236207916090743527}
   m_Layer: 5
   m_Name: Kingdom 2
   m_TagString: Untagged
@@ -1602,6 +1715,19 @@ PolygonCollider2D:
       - {x: -0.60865927, y: -0.80496264}
       - {x: -0.23863888, y: -0.7778115}
   m_UseDelaunayMesh: 0
+--- !u!114 &5236207916090743527
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8558100240054136138}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd8e2d0b57dad0241b6808e3215a595b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ventanaEmergente: {fileID: 0}
 --- !u!1 &8569073086362587553
 GameObject:
   m_ObjectHideFlags: 0
@@ -1613,6 +1739,7 @@ GameObject:
   - component: {fileID: 4208007626239737533}
   - component: {fileID: 100391378031562294}
   - component: {fileID: 6111496341686528647}
+  - component: {fileID: 1153431635362436467}
   m_Layer: 5
   m_Name: Kingdom 1
   m_TagString: Untagged
@@ -1793,3 +1920,16 @@ PolygonCollider2D:
       - {x: -0.24637032, y: -1.9308519}
       - {x: 0.049396515, y: -1.7715268}
   m_UseDelaunayMesh: 0
+--- !u!114 &1153431635362436467
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8569073086362587553}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd8e2d0b57dad0241b6808e3215a595b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ventanaEmergente: {fileID: 0}

@@ -908,6 +908,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2036040945 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6595915120199290112, guid: 6a0d798dd21c9784fb078f3f03b8c350, type: 3}
+  m_PrefabInstance: {fileID: 1260853825366087123}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2049326811 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 580354022328878603, guid: 037c9627af0088b45a69116901a65e26, type: 3}
@@ -1097,6 +1102,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1958455863}
+    - target: {fileID: 8524460605162081745, guid: 6a0d798dd21c9784fb078f3f03b8c350, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1110,6 +1119,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1153431635362436467, guid: 07a9cd61e17f634449b87f49d43793df, type: 3}
+      propertyPath: ventanaEmergente
+      value: 
+      objectReference: {fileID: 2036040945}
+    - target: {fileID: 1532292686641244350, guid: 07a9cd61e17f634449b87f49d43793df, type: 3}
+      propertyPath: ventanaEmergente
+      value: 
+      objectReference: {fileID: 2036040945}
     - target: {fileID: 1875615451433186729, guid: 07a9cd61e17f634449b87f49d43793df, type: 3}
       propertyPath: m_Name
       value: World
@@ -1154,6 +1171,38 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3684583279626452859, guid: 07a9cd61e17f634449b87f49d43793df, type: 3}
+      propertyPath: ventanaEmergente
+      value: 
+      objectReference: {fileID: 2036040945}
+    - target: {fileID: 4200474716678355696, guid: 07a9cd61e17f634449b87f49d43793df, type: 3}
+      propertyPath: ventanaEmergente
+      value: 
+      objectReference: {fileID: 2036040945}
+    - target: {fileID: 4552369950260584886, guid: 07a9cd61e17f634449b87f49d43793df, type: 3}
+      propertyPath: ventanaEmergente
+      value: 
+      objectReference: {fileID: 2036040945}
+    - target: {fileID: 4747864460855135218, guid: 07a9cd61e17f634449b87f49d43793df, type: 3}
+      propertyPath: ventanaEmergente
+      value: 
+      objectReference: {fileID: 2036040945}
+    - target: {fileID: 5236207916090743527, guid: 07a9cd61e17f634449b87f49d43793df, type: 3}
+      propertyPath: ventanaEmergente
+      value: 
+      objectReference: {fileID: 2036040945}
+    - target: {fileID: 5262973547311851891, guid: 07a9cd61e17f634449b87f49d43793df, type: 3}
+      propertyPath: ventanaEmergente
+      value: 
+      objectReference: {fileID: 2036040945}
+    - target: {fileID: 7011584356422563269, guid: 07a9cd61e17f634449b87f49d43793df, type: 3}
+      propertyPath: ventanaEmergente
+      value: 
+      objectReference: {fileID: 2036040945}
+    - target: {fileID: 7687672100520149614, guid: 07a9cd61e17f634449b87f49d43793df, type: 3}
+      propertyPath: ventanaEmergente
+      value: 
+      objectReference: {fileID: 2036040945}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
