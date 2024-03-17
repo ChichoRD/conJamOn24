@@ -1,5 +1,6 @@
 using ReignSystem.Modifier;
 using ReignSystem.Parameter;
+using ReignSystem.Parameter.Data;
 using System.Collections.Generic;
 
 namespace ReignSystem
@@ -7,26 +8,40 @@ namespace ReignSystem
     public readonly struct Reign : IModifiableReign,
         IModifiableReign<Reign>,
         IParametrizableReign<InnerReignParameters>,
-        IParametrizableReign<OuterReignParameters<int>>
+        IParametrizableReign<OuterReignParameters<int>>,
+        IParametrizableReign<Agenda>,
+        IParametrizableReign<Population[]>,
+        IParametrizableReign<Emigrations[]>,
+        IParametrizableReign<Imigrations[]>
     {
-        private readonly int _id;
-        private readonly InnerReignParameters _parametrizableInnerReign;
-        private readonly OuterReignParameters<int> _parametrizableOuterReign;
+        public readonly int ID { get; }
+        public readonly InnerReignParameters InnerParameters { get; }
+        public readonly OuterReignParameters<int> OuterParameters { get; }
+        public readonly Agenda Agenda { get; }
+        public readonly Population[] Populations { get; }
+        public readonly Emigrations[] Emigrations { get; }
+        public readonly Imigrations[] Imigrations { get; }
+
+        InnerReignParameters IParametrizableReign<InnerReignParameters>.Parameter => InnerParameters;
+        OuterReignParameters<int> IParametrizableReign<OuterReignParameters<int>>.Parameter => OuterParameters;
+        Agenda IParametrizableReign<Agenda>.Parameter => Agenda;
+        Population[] IParametrizableReign<Population[]>.Parameter => Populations;
+        Emigrations[] IParametrizableReign<Emigrations[]>.Parameter => Emigrations;
+        Imigrations[] IParametrizableReign<Imigrations[]>.Parameter => Imigrations;
+
         private readonly IEnumerable<IModifiableReign> _modifiableReigns;
 
-        public Reign(int id, InnerReignParameters parametrizableInnerReign, OuterReignParameters<int> parametrizableOuterReign, IEnumerable<IModifiableReign> modifiableReigns)
+        public Reign(int iD, InnerReignParameters innerParameters, OuterReignParameters<int> outerParameters, Agenda agenda, Population[] populations, Emigrations[] emigrations, Imigrations[] imigrations, IEnumerable<IModifiableReign> modifiableReigns)
         {
-            _id = id;
-            _parametrizableInnerReign = parametrizableInnerReign;
-            _parametrizableOuterReign = parametrizableOuterReign;
+            ID = iD;
+            InnerParameters = innerParameters;
+            OuterParameters = outerParameters;
+            Agenda = agenda;
+            Populations = populations;
+            Emigrations = emigrations;
+            Imigrations = imigrations;
             _modifiableReigns = modifiableReigns;
         }
-
-        public int ID => _id;
-        public OuterReignParameters<int> OuterReignParameters => _parametrizableOuterReign;
-        public InnerReignParameters Parameter => _parametrizableInnerReign;
-        OuterReignParameters<int> IParametrizableReign<OuterReignParameters<int>>.Parameter =>
-            _parametrizableOuterReign;
 
         public bool Accept<TReignModifier, TData, TReign>(TReignModifier reignModifier, out TReign reign) where TReignModifier : IReignModifier<TReign, TData>
         {
@@ -47,61 +62,25 @@ namespace ReignSystem
             return true;
         }
 
-        public Reign WithID(int id)
-        {
-            return new Reign(
-                id,
-                _parametrizableInnerReign,
-                _parametrizableOuterReign,
-                _modifiableReigns);
-        }
+        public Reign WithID(int iD) =>
+            new Reign(iD, InnerParameters, OuterParameters, Agenda, Populations, Emigrations, Imigrations, _modifiableReigns);
 
-        public Reign WithOuterReignParametersFor(int reignIndex, OuterReignParameter outerReignParameter)
-        {
-            var newOuterReignsParameters = new Dictionary<int, OuterReignParameter>(_parametrizableOuterReign.Relationships)
-            {
-                [reignIndex] = outerReignParameter
-            };
+        public Reign WithInnerReignParameters(InnerReignParameters innerParameters) =>
+            new Reign(ID, innerParameters, OuterParameters, Agenda, Populations, Emigrations, Imigrations, _modifiableReigns);
 
-            return new Reign(
-                _id,
-                _parametrizableInnerReign,
-                new OuterReignParameters<int>
-                    (newOuterReignsParameters),
-                _modifiableReigns);
-        }
+        public Reign WithOuterReignParameters(OuterReignParameters<int> outerParameters) =>
+            new Reign(ID, InnerParameters, outerParameters, Agenda, Populations, Emigrations, Imigrations, _modifiableReigns);
 
-        public Reign WithOuterReignParameters(IEnumerable<KeyValuePair<int, OuterReignParameter>> outerReignsParameters)
-        {
-            var newOuterReignsParameters = new Dictionary<int, OuterReignParameter>();
-            foreach (var (reign, parameter) in outerReignsParameters)
-                newOuterReignsParameters[reign] = parameter;
+        public Reign WithAgenda(Agenda agenda) =>
+            new Reign(ID, InnerParameters, OuterParameters, agenda, Populations, Emigrations, Imigrations, _modifiableReigns);
 
-            return new Reign(
-                _id,
-                _parametrizableInnerReign,
-                new OuterReignParameters<int>
-                    (newOuterReignsParameters),
-                _modifiableReigns);
-        }
+        public Reign WithPopulations(Population[] populations) =>
+            new Reign(ID, InnerParameters, OuterParameters, Agenda, populations, Emigrations, Imigrations, _modifiableReigns);
 
-        public Reign WithInnerReignParameters(InnerReignParameters innerReignParameters)
-        {
-            return new Reign(
-                _id,
-                innerReignParameters,
-                _parametrizableOuterReign,
-                _modifiableReigns);
-        }
+        public Reign WithEmigrations(Emigrations[] emigrations) =>
+            new Reign(ID, InnerParameters, OuterParameters, Agenda, Populations, emigrations, Imigrations, _modifiableReigns);
 
-        //public override string ToString()
-        //{
-        //    return $"Inner: {_parametrizableInnerReign}, Outer: {_parametrizableOuterReign}";
-        //}
-
-        public string AsString()
-        {
-            return $"ID: {_id}, Inner: {_parametrizableInnerReign}, Outer: {_parametrizableOuterReign}";
-        }
+        public Reign WithImigrations(Imigrations[] imigrations) =>
+            new Reign(ID, InnerParameters, OuterParameters, Agenda, Populations, Emigrations, imigrations, _modifiableReigns);
     }
 }

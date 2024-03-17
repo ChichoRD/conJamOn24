@@ -2,33 +2,55 @@
 {
     public readonly struct InnerReignParameters
     {
-        public readonly float water;
+        public readonly float waterBase;
+        public readonly float waterReign;
+        public readonly float waterGrowthRate;
+        public readonly float waterConsumption;
+        public readonly float waterAvailable;
+
+        public readonly float foodBase;
         public readonly float food;
-        public readonly float population;
-        public readonly float content;
+        public readonly float foodGrowthRate;
+        public readonly float foodConsumption;
+        public readonly float foodAvailable;
+
         public readonly float economy;
-        public readonly float agenda;
+        public readonly bool internalConflict;
 
-        public InnerReignParameters(float water, float food, float population, float content, float economy, float agenda)
+        public InnerReignParameters(float waterBase, float waterReign, float waterGrowthRate, float waterConsumption, float waterAvailable, float foodBase, float food, float foodGrowthRate, float foodConsumption, float foodAvailable, float economy, bool internalConflict)
         {
-            this.water = water;
+            this.waterBase = waterBase;
+            this.waterReign = waterReign;
+            this.waterGrowthRate = waterGrowthRate;
+            this.waterConsumption = waterConsumption;
+            this.waterAvailable = waterAvailable;
+            this.foodBase = foodBase;
             this.food = food;
-            this.population = population;
-            this.content = content;
+            this.foodGrowthRate = foodGrowthRate;
+            this.foodConsumption = foodConsumption;
+            this.foodAvailable = foodAvailable;
             this.economy = economy;
-            this.agenda = agenda;
+            this.internalConflict = internalConflict;
         }
 
-        public InnerReignParameters WithWater(float water) => new InnerReignParameters(water, food, population, content, economy, agenda);
-        public InnerReignParameters WithFood(float food) => new InnerReignParameters(water, food, population, content, economy, agenda);
-        public InnerReignParameters WithPopulation(float population) => new InnerReignParameters(water, food, population, content, economy, agenda);
-        public InnerReignParameters WithContent(float content) => new InnerReignParameters(water, food, population, content, economy, agenda);
-        public InnerReignParameters WithEconomy(float economy) => new InnerReignParameters(water, food, population, content, economy, agenda);
-        public InnerReignParameters WithAgenda(float agenda) => new InnerReignParameters(water, food, population, content, economy, agenda);
+        public InnerReignParameters WithWaterReign(float waterReign) =>
+            new InnerReignParameters(waterBase, waterReign, waterGrowthRate, waterConsumption, waterAvailable, foodBase, food, foodGrowthRate, foodConsumption, foodAvailable, economy, internalConflict);
+        public InnerReignParameters WithWaterConsumption(float waterConsumption) =>
+            new InnerReignParameters(waterBase, waterReign, waterGrowthRate, waterConsumption, waterAvailable, foodBase, food, foodGrowthRate, foodConsumption, foodAvailable, economy, internalConflict);
+        public InnerReignParameters WithWaterAvailable(float waterAvailable) => 
+            new InnerReignParameters(waterBase, waterReign, waterGrowthRate, waterConsumption, waterAvailable, foodBase, food, foodGrowthRate, foodConsumption, foodAvailable, economy, internalConflict);
 
-        public override string ToString()
-        {
-            return $"Water: {water}, Food: {food}, Population: {population}, Content: {content}, Economy: {economy}, Agenda: {agenda}";
-        }
+        public InnerReignParameters WithFood(float food) =>
+            new InnerReignParameters(waterBase, waterReign, waterGrowthRate, waterConsumption, waterAvailable, foodBase, food, foodGrowthRate, foodConsumption, foodAvailable, economy, internalConflict);
+        public InnerReignParameters WithFoodConsumption(float foodConsumption) =>
+            new InnerReignParameters(waterBase, waterReign, waterGrowthRate, waterConsumption, waterAvailable, foodBase, food, foodGrowthRate, foodConsumption, foodAvailable, economy, internalConflict);
+        public InnerReignParameters WithFoodAvailable(float foodAvailable) =>
+            new InnerReignParameters(waterBase, waterReign, waterGrowthRate, waterConsumption, waterAvailable, foodBase, food, foodGrowthRate, foodConsumption, foodAvailable, economy, internalConflict);
+
+        public InnerReignParameters WithEconomy(float economy) =>
+            new InnerReignParameters(waterBase, waterReign, waterGrowthRate, waterConsumption, waterAvailable, foodBase, food, foodGrowthRate, foodConsumption, foodAvailable, economy, internalConflict);
+
+        public InnerReignParameters WithInternalConflict(bool internalConflict) =>
+            new InnerReignParameters(waterBase, waterReign, waterGrowthRate, waterConsumption, waterAvailable, foodBase, food, foodGrowthRate, foodConsumption, foodAvailable, economy, internalConflict);
     }
 }
