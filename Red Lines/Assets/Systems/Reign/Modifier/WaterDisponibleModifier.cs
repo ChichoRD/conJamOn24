@@ -5,7 +5,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-internal class WaterDisponible : MonoBehaviour, IReignModifier<Reign, Reign> {
+internal class WaterDisponibleModifier : MonoBehaviour, IReignModifier<Reign, Reign> {
         public Reign Modify(Reign value) {
             
             return value.WithInnerReignParameters(
