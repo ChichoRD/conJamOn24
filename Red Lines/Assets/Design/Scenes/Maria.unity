@@ -1522,6 +1522,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1336264193}
     - target: {fileID: 1153431635362436467, guid: 07a9cd61e17f634449b87f49d43793df, type: 3}
+      propertyPath: _manager
+      value: 
+      objectReference: {fileID: 1958455863}
+    - target: {fileID: 1153431635362436467, guid: 07a9cd61e17f634449b87f49d43793df, type: 3}
       propertyPath: ventanaEmergente
       value: 
       objectReference: {fileID: 2036040945}
@@ -1529,6 +1533,10 @@ PrefabInstance:
       propertyPath: _texto
       value: 
       objectReference: {fileID: 1336264193}
+    - target: {fileID: 1532292686641244350, guid: 07a9cd61e17f634449b87f49d43793df, type: 3}
+      propertyPath: _manager
+      value: 
+      objectReference: {fileID: 1958455863}
     - target: {fileID: 1532292686641244350, guid: 07a9cd61e17f634449b87f49d43793df, type: 3}
       propertyPath: ventanaEmergente
       value: 
@@ -1582,6 +1590,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1336264193}
     - target: {fileID: 3684583279626452859, guid: 07a9cd61e17f634449b87f49d43793df, type: 3}
+      propertyPath: _manager
+      value: 
+      objectReference: {fileID: 1958455863}
+    - target: {fileID: 3684583279626452859, guid: 07a9cd61e17f634449b87f49d43793df, type: 3}
       propertyPath: ventanaEmergente
       value: 
       objectReference: {fileID: 2036040945}
@@ -1589,6 +1601,10 @@ PrefabInstance:
       propertyPath: _texto
       value: 
       objectReference: {fileID: 1336264193}
+    - target: {fileID: 4200474716678355696, guid: 07a9cd61e17f634449b87f49d43793df, type: 3}
+      propertyPath: _manager
+      value: 
+      objectReference: {fileID: 1958455863}
     - target: {fileID: 4200474716678355696, guid: 07a9cd61e17f634449b87f49d43793df, type: 3}
       propertyPath: ventanaEmergente
       value: 
@@ -1597,6 +1613,10 @@ PrefabInstance:
       propertyPath: _texto
       value: 
       objectReference: {fileID: 1336264193}
+    - target: {fileID: 4552369950260584886, guid: 07a9cd61e17f634449b87f49d43793df, type: 3}
+      propertyPath: _manager
+      value: 
+      objectReference: {fileID: 1958455863}
     - target: {fileID: 4552369950260584886, guid: 07a9cd61e17f634449b87f49d43793df, type: 3}
       propertyPath: ventanaEmergente
       value: 
@@ -1605,6 +1625,10 @@ PrefabInstance:
       propertyPath: _texto
       value: 
       objectReference: {fileID: 1336264193}
+    - target: {fileID: 4747864460855135218, guid: 07a9cd61e17f634449b87f49d43793df, type: 3}
+      propertyPath: _manager
+      value: 
+      objectReference: {fileID: 1958455863}
     - target: {fileID: 4747864460855135218, guid: 07a9cd61e17f634449b87f49d43793df, type: 3}
       propertyPath: ventanaEmergente
       value: 
@@ -1613,6 +1637,10 @@ PrefabInstance:
       propertyPath: _texto
       value: 
       objectReference: {fileID: 1336264193}
+    - target: {fileID: 5236207916090743527, guid: 07a9cd61e17f634449b87f49d43793df, type: 3}
+      propertyPath: _manager
+      value: 
+      objectReference: {fileID: 1958455863}
     - target: {fileID: 5236207916090743527, guid: 07a9cd61e17f634449b87f49d43793df, type: 3}
       propertyPath: ventanaEmergente
       value: 
@@ -1621,6 +1649,10 @@ PrefabInstance:
       propertyPath: _texto
       value: 
       objectReference: {fileID: 1336264193}
+    - target: {fileID: 5262973547311851891, guid: 07a9cd61e17f634449b87f49d43793df, type: 3}
+      propertyPath: _manager
+      value: 
+      objectReference: {fileID: 1958455863}
     - target: {fileID: 5262973547311851891, guid: 07a9cd61e17f634449b87f49d43793df, type: 3}
       propertyPath: ventanaEmergente
       value: 
@@ -1629,6 +1661,10 @@ PrefabInstance:
       propertyPath: _texto
       value: 
       objectReference: {fileID: 1336264193}
+    - target: {fileID: 7011584356422563269, guid: 07a9cd61e17f634449b87f49d43793df, type: 3}
+      propertyPath: _manager
+      value: 
+      objectReference: {fileID: 1958455863}
     - target: {fileID: 7011584356422563269, guid: 07a9cd61e17f634449b87f49d43793df, type: 3}
       propertyPath: ventanaEmergente
       value: 
@@ -1637,6 +1673,10 @@ PrefabInstance:
       propertyPath: _texto
       value: 
       objectReference: {fileID: 1336264193}
+    - target: {fileID: 7687672100520149614, guid: 07a9cd61e17f634449b87f49d43793df, type: 3}
+      propertyPath: _manager
+      value: 
+      objectReference: {fileID: 1958455863}
     - target: {fileID: 7687672100520149614, guid: 07a9cd61e17f634449b87f49d43793df, type: 3}
       propertyPath: ventanaEmergente
       value: 
