@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Design/Scenes/Maria.unity
     guid: 153aa4dea769de94698539a7ed4935ff
+  - enabled: 1
+    path: Assets/Design/Scenes/Dialogo.unity
+    guid: cd146c0eb3d83554f956eeea5cf676a5
   m_configObjects: {}

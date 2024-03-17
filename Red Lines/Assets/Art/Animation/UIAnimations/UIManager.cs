@@ -3,9 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
-
-public class UIManager : MonoBehaviour
-{
+using TMPro;
+public class UIManager : MonoBehaviour {
     [SerializeField]
     private GameObject _noticia;
     [SerializeField]
@@ -14,14 +13,22 @@ public class UIManager : MonoBehaviour
     private Animator _buttonSkipAnimator;
     [SerializeField]
     private GameObject _pauseMenu;
+    [SerializeField] private TextMeshProUGUI _textoNoticia;
     private bool _boolSkip = false;
     private bool _boolVentana = false;
     private bool _pausado = false;
+    public int _ciclo = 101;
     void Start() {
+        CambiarNoticia();
         _noticia.SetActive(false);
         _pauseMenu.SetActive(false);
     }
-    
+
+    private void CambiarNoticia(){
+        _textoNoticia.text = "Ciclo "+ _ciclo + "Textito";
+    }
+
+
     public void AbrirCerrarVentana() {
         if (!_boolVentana) {
             _noticia.SetActive(true);
@@ -33,11 +40,13 @@ public class UIManager : MonoBehaviour
     }
 
     public void Skip() {
+        _ciclo += 1;
         if (!_boolSkip) {
             _buttonSkipAnimator.SetBool("Pressed", true);
             Invoke("StopANimator", 0.2f);
             _boolSkip=true;
         }
+        
     }
 
     private void StopANimator() {
