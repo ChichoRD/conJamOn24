@@ -815,6 +815,17 @@ Animator:
   m_CorrespondingSourceObject: {fileID: 3151441398944659438, guid: 6a0d798dd21c9784fb078f3f03b8c350, type: 3}
   m_PrefabInstance: {fileID: 1260853825366087123}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1336264193 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2921981579737453845, guid: 6a0d798dd21c9784fb078f3f03b8c350, type: 3}
+  m_PrefabInstance: {fileID: 1260853825366087123}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1387211958 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 885118840417222896, guid: 6ea5ab4e832b88941ac46f32a0faa7e1, type: 3}
@@ -1141,6 +1152,14 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1958455863}
+    - target: {fileID: 8423987503891993586, guid: 6a0d798dd21c9784fb078f3f03b8c350, type: 3}
+      propertyPath: m_Name
+      value: Noticia Texto
+      objectReference: {fileID: 0}
+    - target: {fileID: 8446052046331663578, guid: 6a0d798dd21c9784fb078f3f03b8c350, type: 3}
+      propertyPath: m_Name
+      value: InfoKingDom
+      objectReference: {fileID: 0}
     - target: {fileID: 8446052046331663578, guid: 6a0d798dd21c9784fb078f3f03b8c350, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -1158,18 +1177,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 606591615376307199, guid: 07a9cd61e17f634449b87f49d43793df, type: 3}
-      propertyPath: m_Color.g
-      value: 0.83921576
-      objectReference: {fileID: 0}
-    - target: {fileID: 606591615376307199, guid: 07a9cd61e17f634449b87f49d43793df, type: 3}
-      propertyPath: m_Color.r
-      value: 0.94117653
-      objectReference: {fileID: 0}
+    - target: {fileID: 1153431635362436467, guid: 07a9cd61e17f634449b87f49d43793df, type: 3}
+      propertyPath: _texto
+      value: 
+      objectReference: {fileID: 1336264193}
     - target: {fileID: 1153431635362436467, guid: 07a9cd61e17f634449b87f49d43793df, type: 3}
       propertyPath: ventanaEmergente
       value: 
       objectReference: {fileID: 2036040945}
+    - target: {fileID: 1532292686641244350, guid: 07a9cd61e17f634449b87f49d43793df, type: 3}
+      propertyPath: _texto
+      value: 
+      objectReference: {fileID: 1336264193}
     - target: {fileID: 1532292686641244350, guid: 07a9cd61e17f634449b87f49d43793df, type: 3}
       propertyPath: ventanaEmergente
       value: 
@@ -1219,33 +1238,65 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3684583279626452859, guid: 07a9cd61e17f634449b87f49d43793df, type: 3}
+      propertyPath: _texto
+      value: 
+      objectReference: {fileID: 1336264193}
+    - target: {fileID: 3684583279626452859, guid: 07a9cd61e17f634449b87f49d43793df, type: 3}
       propertyPath: ventanaEmergente
       value: 
       objectReference: {fileID: 2036040945}
+    - target: {fileID: 4200474716678355696, guid: 07a9cd61e17f634449b87f49d43793df, type: 3}
+      propertyPath: _texto
+      value: 
+      objectReference: {fileID: 1336264193}
     - target: {fileID: 4200474716678355696, guid: 07a9cd61e17f634449b87f49d43793df, type: 3}
       propertyPath: ventanaEmergente
       value: 
       objectReference: {fileID: 2036040945}
     - target: {fileID: 4552369950260584886, guid: 07a9cd61e17f634449b87f49d43793df, type: 3}
+      propertyPath: _texto
+      value: 
+      objectReference: {fileID: 1336264193}
+    - target: {fileID: 4552369950260584886, guid: 07a9cd61e17f634449b87f49d43793df, type: 3}
       propertyPath: ventanaEmergente
       value: 
       objectReference: {fileID: 2036040945}
+    - target: {fileID: 4747864460855135218, guid: 07a9cd61e17f634449b87f49d43793df, type: 3}
+      propertyPath: _texto
+      value: 
+      objectReference: {fileID: 1336264193}
     - target: {fileID: 4747864460855135218, guid: 07a9cd61e17f634449b87f49d43793df, type: 3}
       propertyPath: ventanaEmergente
       value: 
       objectReference: {fileID: 2036040945}
     - target: {fileID: 5236207916090743527, guid: 07a9cd61e17f634449b87f49d43793df, type: 3}
+      propertyPath: _texto
+      value: 
+      objectReference: {fileID: 1336264193}
+    - target: {fileID: 5236207916090743527, guid: 07a9cd61e17f634449b87f49d43793df, type: 3}
       propertyPath: ventanaEmergente
       value: 
       objectReference: {fileID: 2036040945}
+    - target: {fileID: 5262973547311851891, guid: 07a9cd61e17f634449b87f49d43793df, type: 3}
+      propertyPath: _texto
+      value: 
+      objectReference: {fileID: 1336264193}
     - target: {fileID: 5262973547311851891, guid: 07a9cd61e17f634449b87f49d43793df, type: 3}
       propertyPath: ventanaEmergente
       value: 
       objectReference: {fileID: 2036040945}
     - target: {fileID: 7011584356422563269, guid: 07a9cd61e17f634449b87f49d43793df, type: 3}
+      propertyPath: _texto
+      value: 
+      objectReference: {fileID: 1336264193}
+    - target: {fileID: 7011584356422563269, guid: 07a9cd61e17f634449b87f49d43793df, type: 3}
       propertyPath: ventanaEmergente
       value: 
       objectReference: {fileID: 2036040945}
+    - target: {fileID: 7687672100520149614, guid: 07a9cd61e17f634449b87f49d43793df, type: 3}
+      propertyPath: _texto
+      value: 
+      objectReference: {fileID: 1336264193}
     - target: {fileID: 7687672100520149614, guid: 07a9cd61e17f634449b87f49d43793df, type: 3}
       propertyPath: ventanaEmergente
       value: 

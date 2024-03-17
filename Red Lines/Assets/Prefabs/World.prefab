@@ -193,6 +193,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ventanaEmergente: {fileID: 0}
+  _layoutType: 0
+  _reignLayout: {fileID: 0}
+  _texto: {fileID: 0}
 --- !u!1 &1875615451433186729
 GameObject:
   m_ObjectHideFlags: 0
@@ -422,6 +425,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ventanaEmergente: {fileID: 0}
+  _layoutType: 0
+  _reignLayout: {fileID: 0}
+  _texto: {fileID: 0}
 --- !u!1 &4324050605495803331
 GameObject:
   m_ObjectHideFlags: 0
@@ -590,6 +596,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ventanaEmergente: {fileID: 0}
+  _layoutType: 0
+  _reignLayout: {fileID: 0}
+  _texto: {fileID: 0}
 --- !u!1 &5081994792617150082
 GameObject:
   m_ObjectHideFlags: 0
@@ -771,6 +780,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ventanaEmergente: {fileID: 0}
+  _layoutType: 0
+  _reignLayout: {fileID: 0}
+  _texto: {fileID: 0}
 --- !u!1 &6573488552289220592
 GameObject:
   m_ObjectHideFlags: 0
@@ -931,6 +943,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ventanaEmergente: {fileID: 0}
+  _layoutType: 0
+  _reignLayout: {fileID: 0}
+  _texto: {fileID: 0}
 --- !u!1 &6821035773637342704
 GameObject:
   m_ObjectHideFlags: 0
@@ -1136,6 +1151,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ventanaEmergente: {fileID: 0}
+  _layoutType: 0
+  _reignLayout: {fileID: 0}
+  _texto: {fileID: 0}
 --- !u!1 &7626032544701076810
 GameObject:
   m_ObjectHideFlags: 0
@@ -1212,7 +1230,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -5
   m_Sprite: {fileID: 21300000, guid: 81ee5a9a4a379184b9f7594dd01b73de, type: 3}
-  m_Color: {r: 0.9411765, g: 0.9021889, b: 0.5882353, a: 1}
+  m_Color: {r: 0.94117653, g: 0.83921576, b: 0.5882353, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1335,6 +1353,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ventanaEmergente: {fileID: 0}
+  _layoutType: 0
+  _reignLayout: {fileID: 0}
+  _texto: {fileID: 0}
 --- !u!1 &8273245398316293916
 GameObject:
   m_ObjectHideFlags: 0
@@ -1540,6 +1561,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ventanaEmergente: {fileID: 0}
+  _layoutType: 0
+  _reignLayout: {fileID: 0}
+  _texto: {fileID: 0}
 --- !u!1 &8558100240054136138
 GameObject:
   m_ObjectHideFlags: 0
@@ -1728,6 +1752,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ventanaEmergente: {fileID: 0}
+  _layoutType: 0
+  _reignLayout: {fileID: 0}
+  _texto: {fileID: 0}
 --- !u!1 &8569073086362587553
 GameObject:
   m_ObjectHideFlags: 0
@@ -1933,3 +1960,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ventanaEmergente: {fileID: 0}
+  _layoutType: 0
+  _reignLayout: {fileID: 0}
+  _texto: {fileID: 0}
