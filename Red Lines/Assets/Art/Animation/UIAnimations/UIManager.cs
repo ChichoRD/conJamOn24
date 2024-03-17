@@ -61,7 +61,7 @@ public class UIManager : MonoBehaviour
     }
     public void Quit()
     {
-        SceneManager.LoadScene("MainMenu");
+        SceneManager.LoadScene("GameStartMenu");
     }
     public void Reanudar()
     {
