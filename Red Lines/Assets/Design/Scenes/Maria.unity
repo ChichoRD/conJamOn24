@@ -533,30 +533,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 361090879485886810, guid: bccce100c2f49f34f957a62d825ca13a, type: 3}
-      propertyPath: m_fontSize
-      value: 80
-      objectReference: {fileID: 0}
-    - target: {fileID: 361090879485886810, guid: bccce100c2f49f34f957a62d825ca13a, type: 3}
-      propertyPath: m_fontSizeBase
-      value: 80
-      objectReference: {fileID: 0}
-    - target: {fileID: 1183381808484056374, guid: bccce100c2f49f34f957a62d825ca13a, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 259.2267
-      objectReference: {fileID: 0}
-    - target: {fileID: 1183381808484056374, guid: bccce100c2f49f34f957a62d825ca13a, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 76.3697
-      objectReference: {fileID: 0}
-    - target: {fileID: 1183381808484056374, guid: bccce100c2f49f34f957a62d825ca13a, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 37.11266
-      objectReference: {fileID: 0}
-    - target: {fileID: 1183381808484056374, guid: bccce100c2f49f34f957a62d825ca13a, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 56.99529
-      objectReference: {fileID: 0}
     - target: {fileID: 1217575479183426598, guid: bccce100c2f49f34f957a62d825ca13a, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -587,18 +563,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1217575479183426598, guid: bccce100c2f49f34f957a62d825ca13a, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1217575479183426598, guid: bccce100c2f49f34f957a62d825ca13a, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1217575479183426598, guid: bccce100c2f49f34f957a62d825ca13a, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1217575479183426598, guid: bccce100c2f49f34f957a62d825ca13a, type: 3}
-      propertyPath: m_LocalScale.z
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1217575479183426598, guid: bccce100c2f49f34f957a62d825ca13a, type: 3}
@@ -653,82 +617,6 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1958455863}
-    - target: {fileID: 2575370266962700755, guid: bccce100c2f49f34f957a62d825ca13a, type: 3}
-      propertyPath: m_UiScaleMode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2575370266962700755, guid: bccce100c2f49f34f957a62d825ca13a, type: 3}
-      propertyPath: m_PresetInfoIsWorld
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4224767703308985251, guid: bccce100c2f49f34f957a62d825ca13a, type: 3}
-      propertyPath: m_RenderMode
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4542443041974452547, guid: bccce100c2f49f34f957a62d825ca13a, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 259.2267
-      objectReference: {fileID: 0}
-    - target: {fileID: 4542443041974452547, guid: bccce100c2f49f34f957a62d825ca13a, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 76.3697
-      objectReference: {fileID: 0}
-    - target: {fileID: 4542443041974452547, guid: bccce100c2f49f34f957a62d825ca13a, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 37.112488
-      objectReference: {fileID: 0}
-    - target: {fileID: 4542443041974452547, guid: bccce100c2f49f34f957a62d825ca13a, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -24.609787
-      objectReference: {fileID: 0}
-    - target: {fileID: 5006653976202268462, guid: bccce100c2f49f34f957a62d825ca13a, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 259.2267
-      objectReference: {fileID: 0}
-    - target: {fileID: 5006653976202268462, guid: bccce100c2f49f34f957a62d825ca13a, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 76.3697
-      objectReference: {fileID: 0}
-    - target: {fileID: 5006653976202268462, guid: bccce100c2f49f34f957a62d825ca13a, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 37.112488
-      objectReference: {fileID: 0}
-    - target: {fileID: 5006653976202268462, guid: bccce100c2f49f34f957a62d825ca13a, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -104.722534
-      objectReference: {fileID: 0}
-    - target: {fileID: 5408006307155131038, guid: bccce100c2f49f34f957a62d825ca13a, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 336.8071
-      objectReference: {fileID: 0}
-    - target: {fileID: 5408006307155131038, guid: bccce100c2f49f34f957a62d825ca13a, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 372.6136
-      objectReference: {fileID: 0}
-    - target: {fileID: 5408006307155131038, guid: bccce100c2f49f34f957a62d825ca13a, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 21
-      objectReference: {fileID: 0}
-    - target: {fileID: 5408006307155131038, guid: bccce100c2f49f34f957a62d825ca13a, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5440522523757910684, guid: bccce100c2f49f34f957a62d825ca13a, type: 3}
-      propertyPath: m_fontSize
-      value: 80
-      objectReference: {fileID: 0}
-    - target: {fileID: 5440522523757910684, guid: bccce100c2f49f34f957a62d825ca13a, type: 3}
-      propertyPath: m_fontSizeBase
-      value: 80
-      objectReference: {fileID: 0}
-    - target: {fileID: 6770429512568480393, guid: bccce100c2f49f34f957a62d825ca13a, type: 3}
-      propertyPath: m_fontSize
-      value: 80
-      objectReference: {fileID: 0}
-    - target: {fileID: 6770429512568480393, guid: bccce100c2f49f34f957a62d825ca13a, type: 3}
-      propertyPath: m_fontSizeBase
-      value: 80
-      objectReference: {fileID: 0}
     - target: {fileID: 7517440616737968092, guid: bccce100c2f49f34f957a62d825ca13a, type: 3}
       propertyPath: m_Name
       value: MenuPausa
