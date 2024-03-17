@@ -1,0 +1,186 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5999599954871150770
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3334143527361519194}
+  - component: {fileID: 6882948160423117660}
+  - component: {fileID: 3263172432822115564}
+  - component: {fileID: 7441286971303081342}
+  m_Layer: 0
+  m_Name: Borders Handling (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3334143527361519194
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5999599954871150770}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6882948160423117660
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5999599954871150770}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 248fa52a5db4c5442b417a0db12c0d0d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _borderPlacingActionReference: {fileID: 0}
+  _camera: {fileID: 0}
+  _borderPlacer: {fileID: 3263172432822115564}
+  _borderFactoryRoot: {fileID: 0}
+  _borderDetectionRadius: 0.1
+  _borderLayerMask:
+    serializedVersion: 2
+    m_Bits: 1
+--- !u!114 &3263172432822115564
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5999599954871150770}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab7b1726582b79b43b082309970e5fda, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _borderTransforms: []
+  _borderPairs:
+  - <Transform>k__BackingField: {fileID: 0}
+    <BorderInfo>k__BackingField:
+      <From>k__BackingField: 0
+      <To>k__BackingField: 0
+  - <Transform>k__BackingField: {fileID: 0}
+    <BorderInfo>k__BackingField:
+      <From>k__BackingField: 0
+      <To>k__BackingField: 0
+  - <Transform>k__BackingField: {fileID: 0}
+    <BorderInfo>k__BackingField:
+      <From>k__BackingField: 0
+      <To>k__BackingField: 0
+  - <Transform>k__BackingField: {fileID: 0}
+    <BorderInfo>k__BackingField:
+      <From>k__BackingField: 0
+      <To>k__BackingField: 0
+  - <Transform>k__BackingField: {fileID: 0}
+    <BorderInfo>k__BackingField:
+      <From>k__BackingField: 0
+      <To>k__BackingField: 0
+  - <Transform>k__BackingField: {fileID: 0}
+    <BorderInfo>k__BackingField:
+      <From>k__BackingField: 0
+      <To>k__BackingField: 0
+  - <Transform>k__BackingField: {fileID: 0}
+    <BorderInfo>k__BackingField:
+      <From>k__BackingField: 0
+      <To>k__BackingField: 0
+  - <Transform>k__BackingField: {fileID: 0}
+    <BorderInfo>k__BackingField:
+      <From>k__BackingField: 0
+      <To>k__BackingField: 0
+  - <Transform>k__BackingField: {fileID: 0}
+    <BorderInfo>k__BackingField:
+      <From>k__BackingField: 0
+      <To>k__BackingField: 0
+  - <Transform>k__BackingField: {fileID: 0}
+    <BorderInfo>k__BackingField:
+      <From>k__BackingField: 0
+      <To>k__BackingField: 0
+  - <Transform>k__BackingField: {fileID: 0}
+    <BorderInfo>k__BackingField:
+      <From>k__BackingField: 0
+      <To>k__BackingField: 0
+  - <Transform>k__BackingField: {fileID: 0}
+    <BorderInfo>k__BackingField:
+      <From>k__BackingField: 0
+      <To>k__BackingField: 0
+  - <Transform>k__BackingField: {fileID: 0}
+    <BorderInfo>k__BackingField:
+      <From>k__BackingField: 0
+      <To>k__BackingField: 0
+  - <Transform>k__BackingField: {fileID: 0}
+    <BorderInfo>k__BackingField:
+      <From>k__BackingField: 0
+      <To>k__BackingField: 0
+  - <Transform>k__BackingField: {fileID: 0}
+    <BorderInfo>k__BackingField:
+      <From>k__BackingField: 0
+      <To>k__BackingField: 0
+  - <Transform>k__BackingField: {fileID: 0}
+    <BorderInfo>k__BackingField:
+      <From>k__BackingField: 0
+      <To>k__BackingField: 0
+  _reignLayout: {fileID: 7441286971303081342}
+--- !u!114 &7441286971303081342
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5999599954871150770}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71a1d510cde882741b78ed1fd26bb1ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _reignsContainer: {fileID: 11400000, guid: 5b544b5b399555843806fdf112de3852, type: 2}
+  _reignFactories:
+  - <ReignLayoutType>k__BackingField: 0
+    <ReignFactory>k__BackingField:
+      <Factory>k__BackingField: {fileID: 11400000, guid: 4061ce180d2d9804ab955e8f2ac95eff, type: 2}
+      <Count>k__BackingField: 1
+  - <ReignLayoutType>k__BackingField: 1
+    <ReignFactory>k__BackingField:
+      <Factory>k__BackingField: {fileID: 11400000, guid: 4061ce180d2d9804ab955e8f2ac95eff, type: 2}
+      <Count>k__BackingField: 1
+  - <ReignLayoutType>k__BackingField: 2
+    <ReignFactory>k__BackingField:
+      <Factory>k__BackingField: {fileID: 11400000, guid: 4061ce180d2d9804ab955e8f2ac95eff, type: 2}
+      <Count>k__BackingField: 1
+  - <ReignLayoutType>k__BackingField: 3
+    <ReignFactory>k__BackingField:
+      <Factory>k__BackingField: {fileID: 11400000, guid: 4061ce180d2d9804ab955e8f2ac95eff, type: 2}
+      <Count>k__BackingField: 1
+  - <ReignLayoutType>k__BackingField: 4
+    <ReignFactory>k__BackingField:
+      <Factory>k__BackingField: {fileID: 11400000, guid: 4061ce180d2d9804ab955e8f2ac95eff, type: 2}
+      <Count>k__BackingField: 1
+  - <ReignLayoutType>k__BackingField: 5
+    <ReignFactory>k__BackingField:
+      <Factory>k__BackingField: {fileID: 11400000, guid: 4061ce180d2d9804ab955e8f2ac95eff, type: 2}
+      <Count>k__BackingField: 1
+  - <ReignLayoutType>k__BackingField: 6
+    <ReignFactory>k__BackingField:
+      <Factory>k__BackingField: {fileID: 11400000, guid: 4061ce180d2d9804ab955e8f2ac95eff, type: 2}
+      <Count>k__BackingField: 1
+  - <ReignLayoutType>k__BackingField: 7
+    <ReignFactory>k__BackingField:
+      <Factory>k__BackingField: {fileID: 11400000, guid: 4061ce180d2d9804ab955e8f2ac95eff, type: 2}
+      <Count>k__BackingField: 1
+  - <ReignLayoutType>k__BackingField: 8
+    <ReignFactory>k__BackingField:
+      <Factory>k__BackingField: {fileID: 11400000, guid: 4061ce180d2d9804ab955e8f2ac95eff, type: 2}
+      <Count>k__BackingField: 1
+  _createOnAwake: 1
