@@ -9,7 +9,7 @@ using UnityEngine;
 namespace ReignCollectionSystem
 {
     [CreateAssetMenu(fileName = "ReignsContainer", menuName = "Reign/Collection/ReignsContainer")]
-    internal class ReignsContainer : ScriptableObject
+    internal class ReignsContainer : ScriptableObject, IObservableReignContainer
     {
         [Serializable]
         public struct ReignFactoryCreationPair
@@ -31,9 +31,12 @@ namespace ReignCollectionSystem
 
         public IReadOnlyList<Reign> Reigns => _modifiedReigns;
 
+        public event Action<Reign> ReignModified;
+        public event Action<Reign> ReignModificationApplied;
+
         public IReadOnlyList<Reign> InitializeWith(IReadOnlyList<ReignFactoryCreationPair> factories)
         {
-            Dictionary<Reign, ReignFactory> reignFactoryPairs = new Dictionary<Reign, ReignFactory>(factories.Count);
+            Dictionary<int, ReignFactory> reignFactoryPairs = new Dictionary<int, ReignFactory>(factories.Count);
             _reigns = new Reign[factories.Sum(pair => pair.Count)];
             _modifiedReigns = new Reign[_reigns.Length];
 
@@ -42,8 +45,8 @@ namespace ReignCollectionSystem
             {
                 for (int i = 0; i < pair.Count; i++)
                 {
-                    _reigns[index] = pair.Factory.Create();
-                    reignFactoryPairs[_reigns[index]] = pair.Factory;
+                    _reigns[index] = pair.Factory.Create().WithID(index);
+                    reignFactoryPairs[index] = pair.Factory;
                     index++;
                 }
             }
@@ -53,7 +56,7 @@ namespace ReignCollectionSystem
                 for (int j = 0; j < _reigns.Length; j++)
                 {
                     if (i != j)
-                        _reigns[i] = _reigns[i].WithOuterReignParametersFor(_reigns[j], reignFactoryPairs[_reigns[i]].DefaultOuterParameters);
+                        _reigns[i] = _reigns[i].WithOuterReignParametersFor(_reigns[j].ID, reignFactoryPairs[i].DefaultOuterParameters);
                 }
 
                 _modifiedReigns[i] = _reigns[i];
@@ -66,6 +69,9 @@ namespace ReignCollectionSystem
         {
             _reigns = new Reign[_modifiedReigns.Length];
             Array.Copy(_modifiedReigns, _reigns, _reigns.Length);
+
+            foreach (var reign in _reigns)
+                ReignModificationApplied?.Invoke(reign);
 
             return _reigns;
         }
@@ -83,10 +89,11 @@ namespace ReignCollectionSystem
         {
             if (reignIndex < 0
                 || reignIndex >= _modifiedReigns.Length 
-                || _modifiedReigns[reignIndex].Accept<TModifier, TData, Reign>(modifier, out Reign modifiedReign))
+                || !_modifiedReigns[reignIndex].Accept<TModifier, TData, Reign>(modifier, out Reign modifiedReign))
                 return false;
 
             _modifiedReigns[reignIndex] = modifiedReign;
+            ReignModified?.Invoke(_modifiedReigns[reignIndex]);
             return true;
         }
     }

@@ -1,0 +1,56 @@
+{
+    "name": "Map Controls",
+    "maps": [
+        {
+            "name": "Map Action Map",
+            "id": "1696c5a5-bbd9-42fc-9640-76fb64882f87",
+            "actions": [
+                {
+                    "name": "Press",
+                    "type": "Value",
+                    "id": "c909dfd5-c0f5-4a69-ae60-c64d40d37064",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "Position + Press",
+                    "id": "ddf0ea14-c4e9-4748-a881-2e2cd73decab",
+                    "path": "OneModifier",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Press",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "modifier",
+                    "id": "91ade18c-ae63-432f-a7b4-555d00be888e",
+                    "path": "<Pointer>/press",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Press",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "binding",
+                    "id": "b891b3f5-150e-456f-91fb-9b5a51a49cc9",
+                    "path": "<Pointer>/position",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Press",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}

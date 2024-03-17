@@ -13,5 +13,14 @@ MonoBehaviour:
   m_Name: ReignFactory
   m_EditorClassIdentifier: 
   _modifiableReignFactories: []
-  _defaultInnerParameters: []
-  _defaultOuterParameters: []
+  _defaultInnerParameters:
+    <Water>k__BackingField: 0.5
+    <Food>k__BackingField: 0.5
+    <Population>k__BackingField: 0.5
+    <Content>k__BackingField: 0.5
+    <Economy>k__BackingField: 0.5
+    <Agenda>k__BackingField: 0.5
+  _defaultOuterParameters:
+    <Comunication>k__BackingField: 0.5
+    <Sympathy>k__BackingField: 0.5
+    <Hatred>k__BackingField: 0.5

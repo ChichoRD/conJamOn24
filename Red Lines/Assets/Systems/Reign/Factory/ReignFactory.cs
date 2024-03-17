@@ -19,8 +19,9 @@ namespace ReignSystem.Factory
         public Reign Create()
         {
             return new Reign(
+                0,
                 _defaultInnerParameters.Create(),
-                OuterReignParameters<IParametrizableReign<InnerReignParameters>>.FromEmpty(),
+                OuterReignParameters<int>.FromEmpty(),
                 _modifiableReignFactories.Select(Create));
 
             static IModifiableReign Create(ModifiableReignFactory factory) => factory.Create();

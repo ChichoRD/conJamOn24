@@ -1,8 +1,7 @@
 {
-    "name": "Reign-Border-System",
+    "name": "Reign-Event-System",
     "rootNamespace": "",
     "references": [
-        "GUID:75469ad4d38634e559750d17036d5f7c",
         "GUID:1aa95581a47e2784092aca4a199ec1a7",
         "GUID:df68c24e4ff14d44cb9d92f65ec0e936"
     ],

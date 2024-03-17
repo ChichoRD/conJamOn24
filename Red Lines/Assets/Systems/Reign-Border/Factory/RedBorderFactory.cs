@@ -11,7 +11,7 @@ namespace ReignBorderSystem.Factory
         [SerializeField]
         private float _maxComunicationReduction;
 
-        public IBorder CreateBetween(Reign from, Reign to) =>
+        public IBorder CreateBetween(in Reign from, in Reign to) =>
             new RedBorder(Random.Range(_minComunicationReduction, _maxComunicationReduction), to);
     }
 }

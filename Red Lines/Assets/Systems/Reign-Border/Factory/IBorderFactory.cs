@@ -4,6 +4,6 @@ namespace ReignBorderSystem.Factory
 {
     public interface IBorderFactory
     {
-        IBorder CreateBetween(Reign from, Reign to);
+        IBorder CreateBetween(in Reign from, in Reign to);
     }
 }

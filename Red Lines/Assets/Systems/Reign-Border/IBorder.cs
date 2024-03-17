@@ -7,6 +7,13 @@ namespace ReignBorderSystem
     public interface IBorder
     {
         bool PlaceIn(ReignLayout reignLayout, ReignLayoutType reignLayoutType);
+
+        public readonly static IBorder NullBoder = NullBorder.Instance;
+        private readonly struct NullBorder : IBorder
+        {
+            public readonly static NullBorder Instance = new NullBorder();
+            public bool PlaceIn(ReignLayout reignLayout, ReignLayoutType reignLayoutType) => false;
+        }
     }
 
     public interface IBorder<in TData> : IBorder

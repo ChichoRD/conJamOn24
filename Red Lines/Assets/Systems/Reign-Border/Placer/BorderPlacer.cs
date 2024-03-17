@@ -65,8 +65,8 @@ namespace ReignBorderSystem.Placer
             if (!TryGetReigns(transform, out BorderInfo borderInfo, out Reign from, out Reign to))
                 return false;
 
-            return borderFactory.CreateBetween(from, to).PlaceIn(_reignLayout, borderInfo.From)
-                && borderFactory.CreateBetween(to, from).PlaceIn(_reignLayout, borderInfo.To);
+            return borderFactory.CreateBetween(in from, in to).PlaceIn(_reignLayout, borderInfo.From)
+                && borderFactory.CreateBetween(in to, in from).PlaceIn(_reignLayout, borderInfo.To);
         }
 
         public bool TryGetReigns(Transform transform, out Reign from, out Reign to)

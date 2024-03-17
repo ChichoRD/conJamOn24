@@ -7,7 +7,7 @@ using UnityEngine;
 
 namespace ReignCollectionSystem
 {
-    public class ReignLayout : MonoBehaviour
+    public class ReignLayout : MonoBehaviour, IObservableReignContainer
     {
         [Serializable]
         private struct ReignLayoutFactoryPair
@@ -49,6 +49,18 @@ namespace ReignCollectionSystem
         [SerializeField]
         private bool _createOnAwake = true;
         private Dictionary<ReignLayoutType, int> _reigns;
+
+        public event Action<Reign> ReignModified
+        {
+            add => _reignsContainer.ReignModified += value;
+            remove => _reignsContainer.ReignModified -= value;
+        }
+
+        public event Action<Reign> ReignModificationApplied
+        {
+            add => _reignsContainer.ReignModificationApplied += value;
+            remove => _reignsContainer.ReignModificationApplied -= value;
+        }
 
         private void Awake()
         {

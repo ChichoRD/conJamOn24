@@ -25,5 +25,10 @@
         public InnerReignParameters WithContent(float content) => new InnerReignParameters(water, food, population, content, economy, agenda);
         public InnerReignParameters WithEconomy(float economy) => new InnerReignParameters(water, food, population, content, economy, agenda);
         public InnerReignParameters WithAgenda(float agenda) => new InnerReignParameters(water, food, population, content, economy, agenda);
+
+        public override string ToString()
+        {
+            return $"Water: {water}, Food: {food}, Population: {population}, Content: {content}, Economy: {economy}, Agenda: {agenda}";
+        }
     }
 }

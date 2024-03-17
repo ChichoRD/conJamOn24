@@ -1,16 +1,17 @@
 ﻿using ReignSystem;
 using ReignSystem.Modifier;
+using ReignSystem.Parameter;
 
 namespace ReignBorderSystem
 {
     internal readonly struct RedBorder : IBorder<Reign>, IReignModifier<Reign, Reign>
     {
-        private readonly float _reduction;
+        private readonly float _comunicationReduction;
         private readonly Reign _otherReign;
 
-        public RedBorder(float reduction, Reign otherReign)
+        public RedBorder(float comunicationReduction, Reign otherReign)
         {
-            _reduction = reduction;
+            _comunicationReduction = comunicationReduction;
             _otherReign = otherReign;
         }
 
@@ -18,8 +19,8 @@ namespace ReignBorderSystem
 
         public Reign Modify(Reign value)
         {
-            ReignSystem.Parameter.OuterReignParameter outerReignParameter = value.OuterReignParameters.Relationships[_otherReign];
-            return value.WithOuterReignParametersFor(_otherReign, outerReignParameter.WithComunication(outerReignParameter.comunication - _reduction));
+            OuterReignParameter outerReignParameter = value.OuterReignParameters.Relationships[_otherReign.ID];
+            return value.WithOuterReignParametersFor(_otherReign.ID, outerReignParameter.WithComunication(outerReignParameter.comunication - _comunicationReduction));
         }
     }
 }

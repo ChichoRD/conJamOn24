@@ -13,5 +13,10 @@ namespace ReignSystem.Parameter
 
         public static OuterReignParameters<TReign> FromEmpty() =>
             new OuterReignParameters<TReign>(new Dictionary<TReign, OuterReignParameter>());
+
+        public override string ToString()
+        {
+            return string.Join(", ", _values);
+        }
     }
 }

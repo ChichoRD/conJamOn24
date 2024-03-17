@@ -28,6 +28,6 @@ namespace ReignBorderSystem.Factory
             _activeFactory = button.GetComponentInChildren<IBorderFactory>() ?? _activeFactory;
         }
 
-        public IBorder CreateBetween(Reign from, Reign to) => _activeFactory.CreateBetween(from, to);
+        public IBorder CreateBetween(in Reign from, in Reign to) => _activeFactory?.CreateBetween(in from, in to) ?? IBorder.NullBoder;
     }
 }
