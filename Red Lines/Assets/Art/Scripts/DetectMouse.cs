@@ -1,3 +1,4 @@
+using ReignCollectionSystem;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,7 +6,7 @@ using UnityEngine;
 public class DetectMouse : MonoBehaviour
 {
     [SerializeField] private GameObject ventanaEmergente; // Referencia al GameObject de la ventana emergente
-
+    [SerializeField] private ReignLayoutType layoutType;
     void OnMouseEnter() {
         // Mostrar la ventana emergente cuando el ratón entra en el área del país
         ventanaEmergente.SetActive(true);

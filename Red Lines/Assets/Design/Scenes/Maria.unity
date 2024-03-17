@@ -1133,10 +1133,18 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1958455863}
+    - target: {fileID: 6595915120199290112, guid: 6a0d798dd21c9784fb078f3f03b8c350, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8074391842242437362, guid: 6a0d798dd21c9784fb078f3f03b8c350, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1958455863}
+    - target: {fileID: 8446052046331663578, guid: 6a0d798dd21c9784fb078f3f03b8c350, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1150,6 +1158,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 606591615376307199, guid: 07a9cd61e17f634449b87f49d43793df, type: 3}
+      propertyPath: m_Color.g
+      value: 0.83921576
+      objectReference: {fileID: 0}
+    - target: {fileID: 606591615376307199, guid: 07a9cd61e17f634449b87f49d43793df, type: 3}
+      propertyPath: m_Color.r
+      value: 0.94117653
+      objectReference: {fileID: 0}
     - target: {fileID: 1153431635362436467, guid: 07a9cd61e17f634449b87f49d43793df, type: 3}
       propertyPath: ventanaEmergente
       value: 
