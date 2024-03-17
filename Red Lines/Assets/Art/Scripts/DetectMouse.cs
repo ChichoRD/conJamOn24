@@ -10,6 +10,7 @@ public class DetectMouse : MonoBehaviour
     [SerializeField] private GameObject ventanaEmergente; // Referencia al GameObject de la ventana emergente
     [SerializeField] private ReignLayoutType _layoutType;
     [SerializeField] private ReignLayout _reignLayout;
+    [SerializeField] private UIManager _manager;
     private string _water;
     private string _food;
     private string _agenda;
@@ -24,7 +25,7 @@ public class DetectMouse : MonoBehaviour
             _food=reign.Parameter.food.ToString();
             _agenda=reign.Parameter.agenda.ToString();
             _content=reign.Parameter.content.ToString();
-            _texto.text = "Agua: " + _water + "\n" +
+            _texto.text = "Ciclo "+ _manager._ciclo + "Agua: " + _water + "\n" +
                        "Comida: " + _food + "\n" +
                         "Población: " + _water + "\n" +
                         "Agenda: " + _agenda + "\n" +
