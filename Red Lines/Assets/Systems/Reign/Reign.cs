@@ -11,27 +11,27 @@ namespace ReignSystem
         IParametrizableReign<OuterReignParameters<int>>,
         IParametrizableReign<Agenda>,
         IParametrizableReign<Population[]>,
-        IParametrizableReign<Emigrations[]>,
-        IParametrizableReign<Imigrations[]>
+        IParametrizableReign<Emigrations>,
+        IParametrizableReign<Imigrations>
     {
         public readonly int ID { get; }
         public readonly InnerReignParameters InnerParameters { get; }
         public readonly OuterReignParameters<int> OuterParameters { get; }
         public readonly Agenda Agenda { get; }
         public readonly Population[] Populations { get; }
-        public readonly Emigrations[] Emigrations { get; }
-        public readonly Imigrations[] Imigrations { get; }
+        public readonly Emigrations Emigrations { get; }
+        public readonly Imigrations Imigrations { get; }
 
         InnerReignParameters IParametrizableReign<InnerReignParameters>.Parameter => InnerParameters;
         OuterReignParameters<int> IParametrizableReign<OuterReignParameters<int>>.Parameter => OuterParameters;
         Agenda IParametrizableReign<Agenda>.Parameter => Agenda;
         Population[] IParametrizableReign<Population[]>.Parameter => Populations;
-        Emigrations[] IParametrizableReign<Emigrations[]>.Parameter => Emigrations;
-        Imigrations[] IParametrizableReign<Imigrations[]>.Parameter => Imigrations;
+        Emigrations IParametrizableReign<Emigrations>.Parameter => Emigrations;
+        Imigrations IParametrizableReign<Imigrations>.Parameter => Imigrations;
 
         private readonly IEnumerable<IModifiableReign> _modifiableReigns;
 
-        public Reign(int iD, InnerReignParameters innerParameters, OuterReignParameters<int> outerParameters, Agenda agenda, Population[] populations, Emigrations[] emigrations, Imigrations[] imigrations, IEnumerable<IModifiableReign> modifiableReigns)
+        public Reign(int iD, InnerReignParameters innerParameters, OuterReignParameters<int> outerParameters, Agenda agenda, Population[] populations, Emigrations emigrations, Imigrations imigrations, IEnumerable<IModifiableReign> modifiableReigns)
         {
             ID = iD;
             InnerParameters = innerParameters;
@@ -77,10 +77,10 @@ namespace ReignSystem
         public Reign WithPopulations(Population[] populations) =>
             new Reign(ID, InnerParameters, OuterParameters, Agenda, populations, Emigrations, Imigrations, _modifiableReigns);
 
-        public Reign WithEmigrations(Emigrations[] emigrations) =>
+        public Reign WithEmigrations(Emigrations emigrations) =>
             new Reign(ID, InnerParameters, OuterParameters, Agenda, Populations, emigrations, Imigrations, _modifiableReigns);
 
-        public Reign WithImigrations(Imigrations[] imigrations) =>
+        public Reign WithImigrations(Imigrations imigrations) =>
             new Reign(ID, InnerParameters, OuterParameters, Agenda, Populations, Emigrations, imigrations, _modifiableReigns);
     }
 }
