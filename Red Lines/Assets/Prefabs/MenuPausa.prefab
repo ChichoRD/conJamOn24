@@ -34,8 +34,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 6, y: 94}
-  m_SizeDelta: {x: 810.2969, y: 860.7813}
+  m_AnchoredPosition: {x: 23, y: -12}
+  m_SizeDelta: {x: 525.5486, y: 581.4206}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5076895969275787168
 CanvasRenderer:
@@ -111,8 +111,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 48.77185, y: -93}
-  m_SizeDelta: {x: 495.0735, y: 145.8515}
+  m_AnchoredPosition: {x: 48.1417, y: -175.40746}
+  m_SizeDelta: {x: 404.4933, y: 119.1661}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3864916972707861707
 CanvasRenderer:
@@ -244,8 +244,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 48.77185, y: 228.96715}
-  m_SizeDelta: {x: 495.0735, y: 145.8515}
+  m_AnchoredPosition: {x: 48.1419, y: 76.93445}
+  m_SizeDelta: {x: 404.4933, y: 119.1661}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5204218962054851879
 CanvasRenderer:
@@ -433,8 +433,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 150
-  m_fontSizeBase: 150
+  m_fontSize: 130
+  m_fontSizeBase: 130
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -511,8 +511,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 48.77185, y: 68}
-  m_SizeDelta: {x: 495.0735, y: 145.8515}
+  m_AnchoredPosition: {x: 48.1417, y: -50.400757}
+  m_SizeDelta: {x: 404.4933, y: 119.1661}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5602959452108511274
 CanvasRenderer:
@@ -701,7 +701,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1217575479183426598
 RectTransform:
   m_ObjectHideFlags: 0
@@ -881,8 +881,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 150
-  m_fontSizeBase: 150
+  m_fontSize: 130
+  m_fontSizeBase: 130
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1015,8 +1015,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 150
-  m_fontSizeBase: 150
+  m_fontSize: 130
+  m_fontSizeBase: 130
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18

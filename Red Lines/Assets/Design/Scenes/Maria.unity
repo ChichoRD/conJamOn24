@@ -617,34 +617,18 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1958455863}
-    - target: {fileID: 1372046729240388639, guid: bccce100c2f49f34f957a62d825ca13a, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Reiniciar
-      objectReference: {fileID: 0}
     - target: {fileID: 7517440616737968092, guid: bccce100c2f49f34f957a62d825ca13a, type: 3}
       propertyPath: m_Name
       value: MenuPausa
       objectReference: {fileID: 0}
-    - target: {fileID: 7517440616737968092, guid: bccce100c2f49f34f957a62d825ca13a, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 7760174844763607674, guid: bccce100c2f49f34f957a62d825ca13a, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1958455863}
-    - target: {fileID: 7760174844763607674, guid: bccce100c2f49f34f957a62d825ca13a, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Reanudar
-      objectReference: {fileID: 0}
     - target: {fileID: 8270108623624848968, guid: bccce100c2f49f34f957a62d825ca13a, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1958455863}
-    - target: {fileID: 8270108623624848968, guid: bccce100c2f49f34f957a62d825ca13a, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Quit
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1145,58 +1129,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1958455863}
-    - target: {fileID: 2921981579737453845, guid: 6a0d798dd21c9784fb078f3f03b8c350, type: 3}
-      propertyPath: m_text
-      value: 'Agua
-
-        Comida
-
-        Poblacion
-
-        Economia
-
-'
-      objectReference: {fileID: 0}
-    - target: {fileID: 2921981579737453845, guid: 6a0d798dd21c9784fb078f3f03b8c350, type: 3}
-      propertyPath: m_margin.w
-      value: -56.885994
-      objectReference: {fileID: 0}
-    - target: {fileID: 2921981579737453845, guid: 6a0d798dd21c9784fb078f3f03b8c350, type: 3}
-      propertyPath: m_margin.x
-      value: 35.641792
-      objectReference: {fileID: 0}
-    - target: {fileID: 2921981579737453845, guid: 6a0d798dd21c9784fb078f3f03b8c350, type: 3}
-      propertyPath: m_margin.y
-      value: -58.889717
-      objectReference: {fileID: 0}
     - target: {fileID: 3119919526581651736, guid: 6a0d798dd21c9784fb078f3f03b8c350, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1958455863}
-    - target: {fileID: 5171156646778790660, guid: 6a0d798dd21c9784fb078f3f03b8c350, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 5171156646778790660, guid: 6a0d798dd21c9784fb078f3f03b8c350, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 5171156646778790660, guid: 6a0d798dd21c9784fb078f3f03b8c350, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 298.6
-      objectReference: {fileID: 0}
-    - target: {fileID: 5171156646778790660, guid: 6a0d798dd21c9784fb078f3f03b8c350, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 192
-      objectReference: {fileID: 0}
-    - target: {fileID: 6595915120199290112, guid: 6a0d798dd21c9784fb078f3f03b8c350, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6889718275004937015, guid: 6a0d798dd21c9784fb078f3f03b8c350, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 192
-      objectReference: {fileID: 0}
     - target: {fileID: 8074391842242437362, guid: 6a0d798dd21c9784fb078f3f03b8c350, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
