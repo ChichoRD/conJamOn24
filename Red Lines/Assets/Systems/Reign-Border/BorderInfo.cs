@@ -1,16 +1,21 @@
 ﻿using ReignCollectionSystem;
+using System;
+using UnityEngine;
 
 namespace ReignBorderSystem
 {
-    internal readonly struct BorderInfo
+    [Serializable]
+    internal struct BorderInfo
     {
-        public readonly ReignLayoutType from;
-        public readonly ReignLayoutType to;
+        [field: SerializeField]
+        public ReignLayoutType From { get; private set; }
+        [field: SerializeField]
+        public ReignLayoutType To { get; private set; }
 
         public BorderInfo(ReignLayoutType from, ReignLayoutType to)
         {
-            this.from = from;
-            this.to = to;
+            From = from;
+            To = to;
         }
     }
 }

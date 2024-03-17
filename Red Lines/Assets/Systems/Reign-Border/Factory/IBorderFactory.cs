@@ -1,7 +1,9 @@
+using ReignSystem;
+
 namespace ReignBorderSystem.Factory
 {
     public interface IBorderFactory
     {
-        IBorder Create();
+        IBorder CreateBetween(Reign from, Reign to);
     }
 }

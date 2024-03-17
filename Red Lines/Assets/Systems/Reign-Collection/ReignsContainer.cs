@@ -1,7 +1,6 @@
 using ReignSystem;
 using ReignSystem.Factory;
 using ReignSystem.Modifier;
-using ReignSystem.Parameter;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -25,17 +24,6 @@ namespace ReignCollectionSystem
             public ReignFactory Factory { get; private set; }
             [field: SerializeField]
             public int Count { get; private set; }
-
-            public static IEnumerable<(Reign reign, Dictionary<RelationParameterType, float> outerDefaults)> Create(ReignFactoryCreationPair pair)
-            {
-                for (int i = 0; i < pair.Count; i++)
-                    yield return (pair.Factory.Create(), pair.Factory.DefaultOuterParameters);
-            }
-
-            public static IEnumerable<(Reign reign, Dictionary<RelationParameterType, float> outerDefaults)> Create(IEnumerable<ReignFactoryCreationPair> pairs)
-            {
-                return pairs.SelectMany(Create);
-            }
         }
 
         private Reign[] _reigns;
@@ -43,26 +31,32 @@ namespace ReignCollectionSystem
 
         public IReadOnlyList<Reign> Reigns => _modifiedReigns;
 
-        public IReadOnlyList<Reign> InitializeWith(IEnumerable<ReignFactoryCreationPair> factories)
+        public IReadOnlyList<Reign> InitializeWith(IReadOnlyList<ReignFactoryCreationPair> factories)
         {
-            (Reign reign, Dictionary<RelationParameterType, float> outerDefaults)[] reigns = ReignFactoryCreationPair.Create(factories).ToArray();
-            _reigns = new Reign[reigns.Length];
-            _modifiedReigns = new Reign[reigns.Length];
+            Dictionary<Reign, ReignFactory> reignFactoryPairs = new Dictionary<Reign, ReignFactory>(factories.Count);
+            _reigns = new Reign[factories.Sum(pair => pair.Count)];
+            _modifiedReigns = new Reign[_reigns.Length];
 
-            for (int i = 0; i < reigns.Length; i++)
+            int index = 0;
+            foreach (var pair in factories)
             {
-                (Reign reign, Dictionary<RelationParameterType, float> outerDefault) = reigns[i];
-                Dictionary<IParametrizableReign<InnerReignParameters>, OuterReignParameter> relations =
-                    new Dictionary<IParametrizableReign<InnerReignParameters>, OuterReignParameter>(reigns.Length - 1);
+                for (int i = 0; i < pair.Count; i++)
+                {
+                    _reigns[index] = pair.Factory.Create();
+                    reignFactoryPairs[_reigns[index]] = pair.Factory;
+                    index++;
+                }
+            }
 
-                for (int j = 0; j < reigns.Length; j++)
+            for (int i = 0; i < _reigns.Length; i++)
+            {
+                for (int j = 0; j < _reigns.Length; j++)
+                {
                     if (i != j)
-                        relations[reigns[j].reign] = new OuterReignParameter(outerDefault);
+                        _reigns[i] = _reigns[i].WithOuterReignParametersFor(_reigns[j], reignFactoryPairs[_reigns[i]].DefaultOuterParameters);
+                }
 
-                reigns[i].reign = reign.WithOuterReignParameters(relations);
-
-                _reigns[i] = reigns[i].reign;
-                _modifiedReigns[i] = reigns[i].reign;
+                _modifiedReigns[i] = _reigns[i];
             }
 
             return _modifiedReigns;

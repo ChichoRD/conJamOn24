@@ -24,12 +24,19 @@ namespace ReignCollectionSystem
             [field: SerializeField]
             public ReignsContainer.ReignFactoryCreationPair ReignFactory { get; private set; }
 
+            public static IReadOnlyList<ReignsContainer.ReignFactoryCreationPair> FactoriesFrom(IReadOnlyList<ReignLayoutFactoryPair> factoryPairs) =>
+                factoryPairs.Select(pair => pair.ReignFactory).ToArray();
+
             public static Dictionary<ReignLayoutType, int> DictionaryFromCreation(IReadOnlyList<ReignLayoutFactoryPair> factoryPairs, ReignsContainer container)
             {
-                var dictionary = new Dictionary<ReignLayoutType, int>();
-                for (int i = 0; i < container.InitializeWith(factoryPairs.Select(f => f.ReignFactory)).Count; i++)
-                    dictionary[factoryPairs[i].ReignLayoutType] = i;
-                return dictionary;
+                Dictionary<ReignLayoutType, int> result = new Dictionary<ReignLayoutType, int>();
+                IReadOnlyList<ReignsContainer.ReignFactoryCreationPair> reignFactories = FactoriesFrom(factoryPairs);
+                IReadOnlyList<Reign> reigns = container.InitializeWith(reignFactories);
+
+                for (int i = 0; i < reigns.Count; i++)
+                    result[factoryPairs[i].ReignLayoutType] = i;
+
+                return result;
             }
         }
 
@@ -41,9 +48,7 @@ namespace ReignCollectionSystem
 
         [SerializeField]
         private bool _createOnAwake = true;
-
         private Dictionary<ReignLayoutType, int> _reigns;
-        public IReadOnlyDictionary<ReignLayoutType, int> Reigns => _reigns;
 
         private void Awake()
         {
@@ -54,6 +59,16 @@ namespace ReignCollectionSystem
         private void CreateReigns()
         {
             _reigns = ReignLayoutFactoryPair.DictionaryFromCreation(_reignFactories, _reignsContainer);
+        }
+
+        public bool TryGetReign(ReignLayoutType reignLayoutType, out Reign reign)
+        {
+            reign = default;
+            if (!_reigns.TryGetValue(reignLayoutType, out var index))
+                return false;
+
+            reign = _reignsContainer.Reigns[index];
+            return true;
         }
 
         public bool ModifyReign<TModifier, TData>(ReignLayoutType reignLayoutType, TModifier reignModifier)

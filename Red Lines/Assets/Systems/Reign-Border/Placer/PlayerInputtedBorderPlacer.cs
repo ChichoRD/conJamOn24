@@ -1,4 +1,5 @@
 ﻿using ReignBorderSystem.Factory;
+using ReignSystem;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -14,6 +15,8 @@ namespace ReignBorderSystem.Placer
 
         [SerializeField]
         private BorderPlacer _borderPlacer;
+        [SerializeField]
+        private GameObject _borderFactoryRoot;
         private IBorderFactory _borderFactory;
 
         [SerializeField]
@@ -25,7 +28,7 @@ namespace ReignBorderSystem.Placer
 
         private void Awake()
         {
-            _borderFactory = GetComponentInChildren<IBorderFactory>();
+            _borderFactory = _borderFactoryRoot.GetComponentInChildren<IBorderFactory>();
             _borderPlacingActionReference.action.performed += OnBorderPlacingPerformed;
         }
 
@@ -49,7 +52,8 @@ namespace ReignBorderSystem.Placer
             Vector2 mousePosition = context.ReadValue<Vector2>();
             Vector2 worldPosition = _camera.ScreenToWorldPoint(mousePosition);
             Collider2D hit = Physics2D.OverlapCircle(worldPosition, _borderDetectionRadius, _borderLayerMask);
-            _ = hit != null && _borderPlacer.TryPlaceBorder(hit.transform, _borderFactory.Create());
+            _ = hit != null 
+                && _borderPlacer.TryCreateAndPlace(hit.transform, _borderFactory);
         }
     }
 }

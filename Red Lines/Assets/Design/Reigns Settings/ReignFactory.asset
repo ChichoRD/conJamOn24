@@ -9,27 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 63e878f83220412478ecc61890e927eb, type: 3}
+  m_Script: {fileID: 11500000, guid: baef48e854f471b4fba569ba976809a3, type: 3}
   m_Name: ReignFactory
   m_EditorClassIdentifier: 
   _modifiableReignFactories: []
-  _defaultInnerParameters:
-  - <Type>k__BackingField: 0
-    <Value>k__BackingField: 0.5
-  - <Type>k__BackingField: 1
-    <Value>k__BackingField: 0.5
-  - <Type>k__BackingField: 2
-    <Value>k__BackingField: 0.5
-  - <Type>k__BackingField: 3
-    <Value>k__BackingField: 0.5
-  - <Type>k__BackingField: 4
-    <Value>k__BackingField: 0.5
-  - <Type>k__BackingField: 5
-    <Value>k__BackingField: 0.5
-  _defaultOuterParameters:
-  - <Type>k__BackingField: 0
-    <Value>k__BackingField: 0.5
-  - <Type>k__BackingField: 1
-    <Value>k__BackingField: 0.5
-  - <Type>k__BackingField: 2
-    <Value>k__BackingField: 0.5
+  _defaultInnerParameters: []
+  _defaultOuterParameters: []

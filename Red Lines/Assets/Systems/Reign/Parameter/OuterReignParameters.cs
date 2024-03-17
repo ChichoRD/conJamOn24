@@ -2,14 +2,13 @@
 
 namespace ReignSystem.Parameter
 {
-    public readonly struct OuterReignParameters<TReign> : IParametrizableReign<IReadOnlyDictionary<TReign, OuterReignParameter>>
+    public readonly struct OuterReignParameters<TReign>
     {
-        public readonly IReadOnlyDictionary<TReign, OuterReignParameter> values;
-        IReadOnlyDictionary<TReign, OuterReignParameter> IParametrizableReign<IReadOnlyDictionary<TReign, OuterReignParameter>>.Parameter =>
-            values;
-        public OuterReignParameters(IReadOnlyDictionary<TReign, OuterReignParameter> values)
+        private readonly IReadOnlyDictionary<TReign, OuterReignParameter> _values;
+        public IReadOnlyDictionary<TReign, OuterReignParameter> Relationships => _values;
+        public OuterReignParameters(IEnumerable<KeyValuePair<TReign, OuterReignParameter>> values)
         {
-            this.values = values;
+            _values = new Dictionary<TReign, OuterReignParameter>(values);
         }
 
         public static OuterReignParameters<TReign> FromEmpty() =>

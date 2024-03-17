@@ -1,5 +1,4 @@
 ﻿using ReignSystem.Parameter;
-using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
@@ -12,22 +11,22 @@ namespace ReignSystem.Factory
         private ModifiableReignFactory[] _modifiableReignFactories;
 
         [SerializeField]
-        private ReignParameterPair[] _defaultInnerParameters;
+        private InnerReignParameterFactory _defaultInnerParameters;
 
         [SerializeField]
-        private RelationParameterPair[] _defaultOuterParameters;
+        private OuterReignParameterFactory _defaultOuterParameters;
 
         public Reign Create()
         {
             return new Reign(
-                new InnerReignParameters(ReignParameterPair.DictionaryFrom(_defaultInnerParameters)),
+                _defaultInnerParameters.Create(),
                 OuterReignParameters<IParametrizableReign<InnerReignParameters>>.FromEmpty(),
                 _modifiableReignFactories.Select(Create));
 
             static IModifiableReign Create(ModifiableReignFactory factory) => factory.Create();
         }
 
-        public Dictionary<ReignParameterType, float> DefaultInnerParameters => ReignParameterPair.DictionaryFrom(_defaultInnerParameters);
-        public Dictionary<RelationParameterType, float> DefaultOuterParameters => RelationParameterPair.DictionaryFrom(_defaultOuterParameters);
+        public InnerReignParameters DefaultInnerParameters => _defaultInnerParameters.Create();
+        public OuterReignParameter DefaultOuterParameters => _defaultOuterParameters.Create();
     }
 }
